@@ -1,0 +1,14 @@
+# Não inclua arquivos de dados
+dados/*
+venv/*
+x-instagram/*
+
+# Não inclua arquivos de ambiente
+.env
+
+
+# Não inclua arquivos de logs
+*.log
+
+# Não inclua arquivos de configuração local
+*.py
