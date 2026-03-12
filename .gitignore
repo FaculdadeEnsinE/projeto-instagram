@@ -1,6 +1,7 @@
 # Não inclua arquivos de dados
 dados/*
 venv/*
+old/*
 x-instagram/*
 
 # Não inclua arquivos de ambiente
@@ -11,4 +12,6 @@ x-instagram/*
 *.log
 
 # Não inclua arquivos de configuração local
-*.py
+
+# Arquivos de textes
+*.txt
