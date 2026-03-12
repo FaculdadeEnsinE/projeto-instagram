@@ -4,12 +4,10 @@ import json
 from dotenv import load_dotenv
 load_dotenv()
 import os
-import pandas as pd
-
 import requests
 
 # Substitua pelo seu token de acesso válido
-ACCESS_TOKEN = os.getenv("API_MET_ACCESS_TOKEN")
+ACCESS_TOKEN = os.getenv("API_META_ACCESS_TOKEN")
 
 # Endpoint da API para obter informações do usuário autenticado
 url = f"https://graph.instagram.com/me?fields=id,username&access_token={ACCESS_TOKEN}"
@@ -35,4 +33,3 @@ if response.status_code == 200:
         json.dump(medias, f, ensure_ascii=False, indent=4)
 else:
     print("Erro:", response.status_code, response.text)
-
