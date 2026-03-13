@@ -4,6 +4,7 @@ venv/*
 old/*
 x-instagram/*
 
+
 # Não inclua arquivos de ambiente
 .env
 
@@ -14,4 +15,4 @@ x-instagram/*
 # Não inclua arquivos de configuração local
 
 # Arquivos de textes
-*.txt
+instagram02.py

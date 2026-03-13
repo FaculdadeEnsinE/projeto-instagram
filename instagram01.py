@@ -1,10 +1,11 @@
 # Importa as bibliotecas necessárias
 import json
+import requests
 
 from dotenv import load_dotenv
 load_dotenv()
 import os
-import requests
+
 
 # Substitua pelo seu token de acesso válido
 ACCESS_TOKEN = os.getenv("API_META_ACCESS_TOKEN")
@@ -21,7 +22,7 @@ if response.status_code == 200:
 else:
     print("Erro:", response.status_code, response.text)
 
-
+# consultar dados API para obter as mídias do usuário
 url = f"https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token={ACCESS_TOKEN}"
 
 response = requests.get(url)
