@@ -26,7 +26,8 @@ else:
 
 
 # Endpoint para listar todas as mídias do usuário
-url = f"https://graph.instagram.com/me/media?fields=id,caption,media_type,like_count,comments_count,media_url,permalink&access_token={ACCESS_TOKEN}"
+list_fields = "id,replies,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username,text,like_count,comments_count"
+url = f"https://graph.instagram.com/me/media?fields={list_fields}&access_token={ACCESS_TOKEN}"
 
 response = requests.get(url)
 
