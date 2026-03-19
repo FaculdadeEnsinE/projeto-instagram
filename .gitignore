@@ -1,8 +1,7 @@
 # Não inclua arquivos de dados
-dados/*
 venv/*
 old/*
-x-instagram/*
+
 
 
 # Não inclua arquivos de ambiente
@@ -15,4 +14,20 @@ x-instagram/*
 # Não inclua arquivos de configuração local
 
 # Arquivos de textes
+instagram04.py
 instagram05.py
+instagram06.py
+instagram07.py
+instagram08.ipynb
+
+
+# Arquivo de dados
+instagram.duckdb
+
+# Arquivos Dados Json
+json/*
+medias.json
+
+
+# Arquivos de SQL
+*.sql

@@ -46,10 +46,15 @@ lista_campos_video = [
     "views"
 ]
 
+# limit_page=25
+#     &limit={limit_page}\
+
+endpoint = "https://graph.instagram.com/me/media"
 
 # Endpoint para listar todas as mídias do usuário
-url = f"https://graph.instagram.com/me/media?fields={','.join(lista_campos)}&access_token={ACCESS_TOKEN}"
+url = f"{endpoint}?fields={','.join(lista_campos)}&access_token={ACCESS_TOKEN}"
 
+print("URL:", url)
 response = requests.get(url)
 if response.status_code == 200:
     medias = response.json()
