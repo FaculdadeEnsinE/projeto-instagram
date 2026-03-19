@@ -14,18 +14,18 @@ old/*
 # Não inclua arquivos de configuração local
 
 # Arquivos de textes
-instagram06.py
-instagram07.py
-instagram08.ipynb
+# instagram06.py
+# instagram07.py
+# instagram08.ipynb
 
 
 # Arquivo de dados
 instagram.duckdb
 
 # Arquivos Dados Json
-json/*
-medias.json
+# json/*
+# medias.json
 
 
 # Arquivos de SQL
-*.sql
+# *.sql
