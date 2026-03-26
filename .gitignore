@@ -20,7 +20,7 @@ old/*
 
 
 # Arquivo de dados
-instagram.duckdb
+#instagram.duckdb
 
 # Arquivos Dados Json
 # json/*

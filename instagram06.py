@@ -11,20 +11,35 @@ import os
 ACCESS_TOKEN = os.getenv("API_META_ACCESS_TOKEN")
 
 # Endpoint da API para obter informações do usuário autenticado
-url = f"https://graph.instagram.com/me?fields=id,username,account_type,media_count&access_token={ACCESS_TOKEN}"
+url = f"https://graph.instagram.com/me?\
+fields=id,username,account_type,media_count,name,biography,profile_picture_url,followers_count,follows_count\
+&access_token={ACCESS_TOKEN}"
+# id	O ID numérico da conta Instagram Business.
+# ig_id	O ID legado do Instagram (útil para algumas integrações antigas).
+# username	O @ do perfil.
+# name	Nome de exibição do perfil.
+# biography	O texto da bio.
+# profile_picture_url	URL da foto de perfil.
+# followers_count	Quantidade total de seguidores.
+# follows_count	Quantidade de perfis que a conta segue.
+# media_count	Total de publicações.
+
+# tasks, instagram_business_account\
+#id, caption, media_type, media_url, permalink, timestamp, thumbnail_url
 
 response = requests.get(url)
 
 if response.status_code == 200:
     data = response.json()
-    print("ID:", data.get("id"))
-    print("Usuário:", data.get("username"))
-    print("Tipo de Conta:", data.get("account_type"))
-    print("Quantidade de Mídias:", data.get("media_count"))
-    print("Dados completos:", json.dumps(data, indent=4))
+    print(data)
+    # print("ID:", data.get("id"))
+    # print("Usuário:", data.get("username"))
+    # print("Tipo de Conta:", data.get("account_type"))
+    # print("Quantidade de Mídias:", data.get("media_count"))
+    # print("Dados completos:", json.dumps(data, indent=4))
 else:
     print("Erro:", response.status_code, response.text)
-
+exit()
 # consultar dados API para obter as mídias do usuário
 
 # Lista com os nomes dos campos
@@ -38,7 +53,8 @@ lista_campos = [
     "permalink",
     "timestamp",
     "thumbnail_url",
-    "username"
+    "username",
+    "children{media_url}"
 ]
 
 lista_media_type = ["IMAGE", "VIDEO", "CAROUSEL_ALBUM"]
