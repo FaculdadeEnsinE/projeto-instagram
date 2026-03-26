@@ -32,14 +32,14 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
     print(data)
-    # print("ID:", data.get("id"))
-    # print("Usuário:", data.get("username"))
-    # print("Tipo de Conta:", data.get("account_type"))
-    # print("Quantidade de Mídias:", data.get("media_count"))
-    # print("Dados completos:", json.dumps(data, indent=4))
+    print("ID:", data.get("id"))
+    print("Usuário:", data.get("username"))
+    print("Tipo de Conta:", data.get("account_type"))
+    print("Quantidade de Mídias:", data.get("media_count"))
+    print("Dados completos:", json.dumps(data, indent=4))
 else:
     print("Erro:", response.status_code, response.text)
-exit()
+
 # consultar dados API para obter as mídias do usuário
 
 # Lista com os nomes dos campos
