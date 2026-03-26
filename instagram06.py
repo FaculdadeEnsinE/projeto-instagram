@@ -40,6 +40,7 @@ if response.status_code == 200:
 else:
     print("Erro:", response.status_code, response.text)
 
+
 # consultar dados API para obter as mídias do usuário
 
 # Lista com os nomes dos campos
