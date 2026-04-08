@@ -29,3 +29,10 @@ old/*
 
 # Arquivos de SQL
 # *.sql
+
+
+business*
+
+*.old
+
+json2/*

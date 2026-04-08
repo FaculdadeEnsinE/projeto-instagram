@@ -1,3 +1,5 @@
+
+
 -- Colunns:
 -- id,caption,media_type,like_count,comments_count,media_url,permalink,timestamp,username
 
@@ -10,6 +12,8 @@
 -- Quantidade total de mídias
 SELECT count(*)
 FROM medias
+
+
 
 -- Quantidade de mídias por tipo
 SELECT media_type,count(*)
