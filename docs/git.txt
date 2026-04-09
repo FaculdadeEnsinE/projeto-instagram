@@ -6,7 +6,8 @@ git clone <https://link-com-o-nome-do-repositório>
 
 
 2. Git branch
-Usando as branches, vários desenvolvedores conseguem trabalhar em paralelo no mesmo projeto simultaneamente. Podemos usar o comando git branch para criar, listar e excluir as branches.
+Usando as branches, vários desenvolvedores conseguem trabalhar em paralelo no mesmo projeto simultaneamente.
+Podemos usar o comando git branch para criar, listar e excluir as branches.
 
 Como criar uma branch:
 git branch <nome-da-branch>
@@ -23,7 +24,8 @@ git branch -d <nome-da-branch>
 
 
 3. Git checkout
-Usamos git checkout, na maioria dos casos, para trocar de uma branch para outra. Também podemos usar o comando para fazer o checkout de arquivos e commits.
+Usamos git checkout, na maioria dos casos, para trocar de uma branch para outra.
+Também podemos usar o comando para fazer o checkout de arquivos e commits.
 
 git checkout <nome-da-branch>
 
@@ -77,9 +79,9 @@ git pull <repositório-remoto>
 
 
 9. Git revert
-Às vezes, precisamos desfazer as alterações que fizemos. Existem várias maneiras de se desfazer as alterações em nosso espaço de trabalho local ou remotamente 
+Às vezes, precisamos desfazer as alterações que fizemos. Existem várias maneiras de se desfazer as alterações em nosso espaço de trabalho local ou remotamente
 
-Para ver nosso histórico de commits, primeiro, precisamos usar 
+Para ver nosso histórico de commits, primeiro, precisamos usar
 git log --oneline
 
 Precisamos apenas especificar o código hash ao lado do commit que desejamos desfazer:
@@ -99,4 +101,3 @@ git fetch
 Por fim, faça o merge da sua branch do recurso em dev:
 
 git merge <nome-da-branch-com-o-recurso>
-
