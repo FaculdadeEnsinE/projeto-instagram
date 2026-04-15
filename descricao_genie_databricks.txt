@@ -1,0 +1,11 @@
+Este espaço fornece insights sobre postagens de mídia do Instagram, permitindo a análise do envolvimento do usuário e do desempenho do conteúdo.
+
+Capacidades:
+Rastreie e compare métricas de engajamento, como curtidas e comentários em postagens individuais.
+Analise o desempenho por tipo de mídia, legenda, horário de postagem e nome de usuário para identificar conteúdo de melhor desempenho e tendências de engajamento.
+Acesse URLs de mídia direta e links permanentes para revisão ou análise adicional.
+
+Limitações:
+Não é possível analisar o crescimento de seguidores, dados demográficos do público ou tendências em nível de perfil.
+Não inclui dados sobre visualizações de vídeos, compartilhamentos ou outras métricas de engajamento fora do padrão.
+Carece de análise de sentimento de conteúdo ou categorização além das legendas.
